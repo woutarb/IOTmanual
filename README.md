@@ -1,10 +1,9 @@
 # IOTmanual
 Manual for the IOT subject from the Designing for Emerging Technologies semester.
 
-## RFID
-Forget-me-not
+## RFID Arduino programming
 The forget-me-not system has a comprehensive system of mostly borrowed sensors and actuators.
-One part that it doesn't hijack is it's NFC pad and the interaction with the stuff you shouldn't forget.
+One part that it doesn't hijack from existing products is it's NFC pad and the interaction with the objects you shouldn't forget.
 NFC is the part that I will try to work out in this manual.
 As shown in the designmanual it's important that the user can use an object with an NFC tag to communicate with the system.
 Prototyped will be the communication of NFC and system, so it's easier to understand. 
@@ -52,16 +51,22 @@ If you don't already have done so, you will need to add the MFRC522 library to y
 ```14:04:35.806 -> ⸮E⸮|vAM⸮⸮⸮$⸮⸮⸮⸮Firmware Version: 0xFF = (unknown)``` and 
 ```14:04:36.110 -> WARNING: Communication failure, is the MFRC522 properly connected?```
 
+After that, I constantly got the error:
+```esptool.FatalError: Failed to connect to ESP8266: Timed out waiting for packet header```.
+Which even happened during the Blink example, and the other library. (See sources)
+
+Even while 
 ---
 
-## RFID: 
+## Used RFID: 
 https://www.amazon.co.uk/AZDelivery-Reader-Arduino-Raspberry-including/dp/B01M28JAAZ?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duc08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01M28JAAZ
 
 ## Sources:
-Physical set-up image and other information: https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/
+* Physical set-up image and other information: https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/
 
-https://github.com/steigeia/RFID_UNID_LOGGER
+* The library from the quickstart above, which could work if I wasn't stuk on the error. https://github.com/steigeia/RFID_UNID_LOGGER
 
-https://www.teachmemicro.com/arduino-rfid-rc522-tutorial/
-https://github.com/miguelbalboa/rfid
+* https://www.teachmemicro.com/arduino-rfid-rc522-tutorial/
+
+* Used library: https://github.com/miguelbalboa/rfid
 
