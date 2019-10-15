@@ -55,7 +55,6 @@ After that, I constantly got the error:
 ```esptool.FatalError: Failed to connect to ESP8266: Timed out waiting for packet header```.
 Which even happened during the Blink example, and the other library. (See sources)
 
-Even while 
 ---
 
 ## Used RFID: 
