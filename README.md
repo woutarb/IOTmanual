@@ -27,7 +27,8 @@ Can't get the NFC part going without it, after all.
 https://github.com/miguelbalboa/rfid
 
 
-Physical set-up:
+### Physical set-up:
+![More or less what it should look like](https://github.com/wouterBijns/IOTmanual/blob/master/setup.png "Physical setup")
 For this part I followed the quick start guide.
 For digital 10 through thirteen, I used D0 through D3. For digital 5, I used D5.
 If there's a red light burning, it has power.
@@ -40,6 +41,8 @@ If you don't already have done so, you will need to add the MFRC522 library to y
 3. A window will open, navigate to where you downloaded the library and open it. Once it has installed, the IDE should tell you that ` "Library added to your libraries, check "include library"`
 4. Include the library by going to Sketch > Include Library > MFRC522.
 
+---
+
 #### Actual Code
 1. Restart Arduino
 2. Go to file, and get the DumpInfo example from the MFRC522 example collection.
@@ -49,12 +52,14 @@ If you don't already have done so, you will need to add the MFRC522 library to y
 ```14:04:35.806 -> ⸮E⸮|vAM⸮⸮⸮$⸮⸮⸮⸮Firmware Version: 0xFF = (unknown)``` and 
 ```14:04:36.110 -> WARNING: Communication failure, is the MFRC522 properly connected?```
 
+---
 
+## RFID: 
+https://www.amazon.co.uk/AZDelivery-Reader-Arduino-Raspberry-including/dp/B01M28JAAZ?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duc08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01M28JAAZ
 
-RFID: https://www.amazon.co.uk/AZDelivery-Reader-Arduino-Raspberry-including/dp/B01M28JAAZ?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duc08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01M28JAAZ
+## Sources:
+Physical set-up image and other information: https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/
 
-Sources:
-https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/
 https://github.com/steigeia/RFID_UNID_LOGGER
 
 https://www.teachmemicro.com/arduino-rfid-rc522-tutorial/
