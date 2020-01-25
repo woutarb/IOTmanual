@@ -27,45 +27,52 @@ For this guide you will need the [RFID library from Miguel Balboa.](https://gith
 This library is the be all, end all of starting RFID arduino programming, and is used in most related tutorials for arduino.
 
 ### Physical set-up:
-![More or less what it should look like](https://github.com/wouterBijns/IOTmanual/blob/master/setup.png "Physical setup")
-For this part I followed the quick start guide but because I use a NodeMCU board, the connections are a little different.
-D4 - RST
-D5 - SCK
-D6 - MISO
-D7 - MOSI
-D8 - SDA(SS)
-If there's a red light burning, it has power.
+![More or less what it should look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/setup.png "Physical setup")
+For this part I followed the quick start guide but because I use a NodeMCU board, the connections are a little different. The other detail is that SDA is called SS in the code.
+
+*If there's a red light burning, it has power.*
 
 ### Code set-up:
 #### Library:
 If you don't already have done so, you will need to add the MFRC522 library to your Arduino library depository.
-1. Download the library.
+1. Download the [library](https://github.com/miguelbalboa/rfid).
+![Where to click](https://github.com/wouterBijns/IOTmanual/blob/master/images/downloading.png)
 2. Open the Arduino IDE, go to Sketch > Include Library. Click the option to "Add .ZIP Library..."
-3. A window will open, navigate to where you downloaded the library and open it. Once it has installed, the IDE should tell you that ` "Library added to your libraries, check "include library"`
-4. Include the library by going to Sketch > Include Library > MFRC522.
+3. A window will open, navigate to where you left the zipped library and select it. Once it has installed, the IDE should tell you that ` "Library added to your libraries, check "include library"`
+4. Include the library by going to Sketch > Include Library > MFRC522 to see if it has been added.
 
----
+*If the following code has been added, adding the library was succesful*
+``` 
+#include <deprecated.h>
+#include <MFRC522.h>
+#include <MFRC522Extended.h>
+#include <require_cpp11.h> 
+```
 
 #### Actual Code
 1. Restart Arduino
 2. Go to file, and get the DumpInfo example from the MFRC522 example collection.
-3. Change the pin definitions to the accurate versions of your hardware. My RST_PIN got defined as D4, and my SS_PIN as D8. (SS_PIN is namelijk SDA in de afbeelding)
+3. Change the pin definitions to the accurate versions of your hardware. My RST_PIN got defined as D4, and my SS_PIN as D8. (Like mentioned before, SS_PIN is the same as SDA in the physical set-up.)
+
+*How the code should look if you followed the manual so far*
+![How the code should look](https://github.com/wouterBijns/IOTmanual/blob/master/images/desiredCode.png "Desired code input")
+
 4. Upload it to your Arduino.
 5. If you open your Serial monitor on 9600 baud, it will activate.
 6. If you now scan a card or RFID tag, it will dump all the info about it in the serial monitor. This is info you can use if you want to further program with the information on the card or tag
 
-
----
+*This is what the serial should show you if you tap the reader with your card*
+![The desired serial output](https://github.com/wouterBijns/IOTmanual/blob/master/images/desiredOutput.png "Desired output")
 
 ## Used RFID hardware: 
-https://www.amazon.co.uk/AZDelivery-Reader-Arduino-Raspberry-including/dp/B01M28JAAZ?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duc08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01M28JAAZ
+Except the cables and nodeMCU board I assume you already own, seeing how you searched for this manual I used a Arduino friendly RFID kit that can be found on [Amazon](https://www.amazon.co.uk/AZDelivery-Reader-Arduino-Raspberry-including/dp/B01M28JAAZ?psc=1&SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duc08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01M28JAAZ). If you're not a fan of Amazon, [here's an alternative link](https://www.az-delivery.de/products/rfid-set).
 
 ## Sources:
-* Physical set-up image and other information: https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/
+* [Physical set-up image and other information:](https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf/)
 
-* The library from the quickstart above, which could work if I wasn't stuk on the error. https://github.com/steigeia/RFID_UNID_LOGGER
+* [The library from the quickstart above which I personally did not use.](https://github.com/steigeia/RFID_UNID_LOGGER)
 
-* https://www.teachmemicro.com/arduino-rfid-rc522-tutorial/
+* [Here's another quickstart, which you can also use to learn how to write to a RFID card](https://www.teachmemicro.com/arduino-rfid-rc522-tutorial/)
 
-* Used library: https://github.com/miguelbalboa/rfid
+* [Used library](https://github.com/miguelbalboa/rfid)
 
