@@ -35,8 +35,18 @@ There will be three parts to the instructional part of this manual.
 3. Reading out RFID
 
 ## Physical set-up:
-![More or less what it should look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/setup.png "Physical setup")
-For this part I followed the quick start guide but because I use a NodeMCU board, the connections are a little different. The other detail is that SDA is called SS in the code.
+![More or less what it should physically look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/setup.png "Physical setup")
+
+RFID | Nodemcu
+------------- | -------------
+SDA | D8
+SCK | D5
+MOSI | D7
+MISO | D6
+IRQ | Unconnected
+GND | GND
+RST | D4
+3.3V | 3.3V
 
 *If there's a red light burning, it has power.*
 
