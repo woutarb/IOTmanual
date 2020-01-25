@@ -32,14 +32,13 @@ There will be three parts to the instructional part of this manual.
 2. Library set-up
 3. Reading out RFID
 
-### Physical set-up:
+## Physical set-up:
 ![More or less what it should look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/setup.png "Physical setup")
 For this part I followed the quick start guide but because I use a NodeMCU board, the connections are a little different. The other detail is that SDA is called SS in the code.
 
 *If there's a red light burning, it has power.*
 
-### Code set-up:
-#### Library:
+## Code set-up:
 If you haven't already have done so, we will install the MFRC522 library to your Arduino library depository.
 If you have done this already, you can skip ahead to "Using the RFID kit"
 1. Download the [library](https://github.com/miguelbalboa/rfid).
@@ -56,7 +55,7 @@ If you have done this already, you can skip ahead to "Using the RFID kit"
 #include <require_cpp11.h> 
 ```
 
-#### Reading out RFID
+## Reading out RFID
 1. Restart the Arduino development environment
 2. Click "file", and get the DumpInfo example from the MFRC522 example collection.
 3. Change the pin definitions to the accurate versions of your hardware. My RST_PIN got defined as D4, and my SS_PIN as D8. (Like mentioned before, SS_PIN is the same as SDA in the physical set-up.)
