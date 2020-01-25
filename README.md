@@ -1,10 +1,10 @@
 # A start with Arduino RFID programming
 *Getting information from an RFID card to your Serial Monitor*
 
-This manual was initially written for the IOT subject from the Designing for Emerging Technologies semester and aims to guide you through the process of connecting your nodeMCU with a RFID module. It will also allow you to read information from RFID cards.= ir tags.
+This manual was initially written for the IOT subject from the Designing for Emerging Technologies semester and aims to guide you through the process of connecting your nodeMCU with a RFID module. It will also allow you to read information from RFID cards.
 
 ## RFID Arduino programming
-The forget-me-not system has a comprehensive system of mostly borrowed sensors and actuators.
+The forget-me-not system has a comprehensive web of mostly borrowed sensors and actuators.
 One part that it doesn't hijack from existing products is it's NFC pad and the interaction with the objects you shouldn't forget.
 
 The RFID interaction is what I want to show a vital first step for.
@@ -27,7 +27,7 @@ Can't get the NFC part going without it, after all.
 ### Software:
 For this guide you will need the [RFID library from Miguel Balboa.](https://github.com/miguelbalboa/rfid) 
 
-This library is the be all, end all of starting RFID arduino programming, and is used in most related tutorials for arduino.
+This library is the be all, end all of starting RFID arduino progamming, and is used in most related tutorials for arduino.
 
 There will be three parts to the instructional part of this manual.
 1. Physical set-up
