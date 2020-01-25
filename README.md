@@ -35,7 +35,7 @@ There will be three parts to the instructional part of this manual.
 3. Reading out RFID
 
 ## Physical set-up:
-![More or less what it should physically look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/setup.png "Physical setup")
+![More or less what it should physically look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/schematic.png "Physical setup")
 
 RFID | Nodemcu
 ------------- | -------------
