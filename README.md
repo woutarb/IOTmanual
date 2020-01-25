@@ -35,6 +35,7 @@ There will be three parts to the instructional part of this manual.
 3. Reading out RFID
 
 ## Physical set-up:
+*What your set up will need to look like when you are done*
 ![More or less what it should physically look like](https://github.com/wouterBijns/IOTmanual/blob/master/images/schematic.png "Physical setup")
 
 RFID | Nodemcu
@@ -47,6 +48,8 @@ IRQ | Unconnected
 GND | GND
 RST | D4
 3.3V | 3.3V
+
+Connecting the cords will need to be done accordingly
 
 *If there's a red light burning, it has power.*
 
