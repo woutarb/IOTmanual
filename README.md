@@ -1,4 +1,6 @@
-# Getting information from an RFID card to your Serial Monitor
+# A start with Arduino RFID programming
+*Getting information from an RFID card to your Serial Monitor*
+
 This manual was initially written for the IOT subject from the Designing for Emerging Technologies semester and aims to guide you through the process of connecting your nodeMCU with a RFID module. It will also allow you to read information from RFID cards.= ir tags.
 
 ## RFID Arduino programming
