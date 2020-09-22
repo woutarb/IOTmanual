@@ -15,7 +15,7 @@ Prototyped will be how a system can read out RFID, so it's easier to understand 
 ## Needs
 ### Physical :
 Physical stuff:
-* An Arduino board, ESP-12E module.
+* An Arduino board, for example an ESP-12E module.
 You need some sort of computing power to make sure something happens with the RFID information.
 
 * Wires to connect the NFC tag with the Arduino board.
